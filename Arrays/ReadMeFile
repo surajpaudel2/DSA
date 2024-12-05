@@ -1,3 +1,64 @@
-=> Longest Consecutive Subsequences.
+=> Longest Consecutive Subsequences
+    -> Learned how to track the numbers using the hashmap.
+    -> Have we seen the number before, etc.
+
 => Rearrange Array Elements By Sign.
+    -> Trick learned : take 2 variables and increase each variable by 2 steps which will be very easy to get the answer
+
 => Next Permutation
+    -> Learned how to find permutation
+
+=> Rotate matrix by 90 degrees
+    -> Inverse of matrix, Rotation of matrix.
+
+=> Majority Element
+    -> Learned how to find majority elements
+=> Majority Element II
+
+=> Dutch flag partitioning algorithm
+    -> Very helpful to sort the elements if there are only 3 kind of elements in an array
+
+=> Maximum Product subarray
+=> Kadens algo
+
+
+----------------------------------------------------------------------------------------------------------
+
+Steps to Find the Next Permutation
+Identify the Pivot:
+
+Definition: The pivot is the first element from the right end of the sequence that is smaller than its next element.
+Purpose: The pivot indicates where the next permutation will be formed.
+Example: For the sequence [1, 2, 4, 5, 3], start from the right:
+3 is not greater than 5.
+5 is greater than 4, so the pivot is 4.
+Find the Rightmost Successor:
+
+Definition: The rightmost successor is the smallest element in the suffix (the part of the sequence after the pivot) that is larger than the pivot.
+Purpose: Swapping the pivot with this element ensures the smallest lexicographical increase in the sequence.
+Example: In the suffix [5, 3] of [1, 2, 4, 5, 3], the smallest element greater than 4 is 5.
+Swap the Pivot with the Successor:
+
+What to Do: Swap the pivot with the identified rightmost successor.
+Purpose: This swap creates the next lexicographical permutation.
+Example: Swap 4 with 5 to get [1, 2, 5, 4, 3].
+Reverse the Suffix:
+
+Definition: Reverse the sequence after the original pivot position (i.e., the suffix) to make it the smallest possible order.
+Purpose: Reversing ensures the next permutation is the smallest possible sequence that is still greater than the current permutation.
+Example: Reverse the suffix [4, 3] in [1, 2, 5, 4, 3] to get [3, 4].
+Final Sequence
+Result: After reversing, the final sequence is [1, 2, 5, 3, 4].
+Full Example Summary:
+For the sequence [1, 2, 4, 5, 3]:
+
+Pivot: 4 (because 4 < 5).
+Rightmost Successor: 5 (smallest element in the suffix [5, 3] that is larger than 4).
+Swap: [1, 2, 5, 4, 3].
+Reverse Suffix: [1, 2, 5, 3, 4].
+Thus, the next permutation after [1, 2, 4, 5, 3] is [1, 2, 5, 3, 4].
+
+Key Points:
+Pivot: Identifies where the change happens.
+Rightmost Successor: Ensures minimal increase.
+Swap and Reverse: Finalize the next permutation in lexicographical order.
