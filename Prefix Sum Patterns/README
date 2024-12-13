@@ -1,0 +1,26 @@
+-> Normally in prefix sum we try to get answer by using whether the current sum/ diffeence of current sum and given 'K'
+has been seen or not.
+
+-> Some important things learned :
+    => Multiple
+    	-> If some questions like multiple comes, then below maths can comes in handy sometimes.
+
+    		if x % k = y then if you again add the k in x and do modulo by k again you will get the y again.
+    			Example :
+    				x % k == (x + k) % k
+
+
+    => Frequency
+        -> Sometimes this sort of question can be solved by using the sliding window as well, but if the frequency count
+         question comes, like for the count the number of nice sub arrays, where we have to count how many times we have
+          seen the odd numbers in this question one trick is to add count value in each and every iteration.
+
+    => Trick by calculating sum :
+        -> Odd or even
+        -> Negative or positive
+
+=> Trick Learned in Special Array II :
+        -> For continuous odd number try to make the sum as same, don't change it so if we subtract we will get 0, else
+        change the sum so that we will get different value and other than 0 which will be false
+        -> Why this works ?
+                -> Because it is continuous, so if everything is correct sum will never change and we will get 0.
