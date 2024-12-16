@@ -1,0 +1,3 @@
+In greedy questions, you will often use the priority queue and sorted array. So, in priority queue another idea to
+insert the value is by using custom operator in such a way that will give the best value by
+adding/subtracting/multiplying or any kind of operations to the original list, like in MaximumAverageRatio
