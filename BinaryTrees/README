@@ -1,0 +1,4 @@
+=> When questions like make array sorted by performing minimum swaps, then in such kind of question Hashmap can come in
+handy to track the index. Where,
+    index is used to track with sorted arrays or the priority queue, so we will swap the index if it is in incorrect
+    position.

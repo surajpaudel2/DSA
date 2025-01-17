@@ -1,0 +1,14 @@
+Equal Number of 0 and 1 or equal no. of this and that
+	-> Will be helpful to try with counter variable, and if you find 0 then subtract or add and if you find 1 then do the the vice versa that you have done in 0.
+	-> Might have to use some kind of DS.
+	-> Example : Contiguous Array
+
+Range 
+	-> Alway try to write it on paper and draw the range, sometimes it can be changed into overlapping intervals and with the overlapping intervals you can do the operations by using some kind of DS or can do without DS. 
+	
+Multiple
+	-> If some questions like multiple comes, then below maths can comes in handy sometimes. 
+		
+		if x % k = y then if you again add the k in x and do modulo by k again you will get the y again.
+			Example : 
+				x % k == (x + k) % k

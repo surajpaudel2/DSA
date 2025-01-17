@@ -1,0 +1,26 @@
+=> Differences Between Count Inversion Problem and the Reverse Pairs Problem:
+==============================================================================================
+    Assume at the time of merging an array our 2 divided sorted array which are ready to merge look like below :
+
+    int[] arr1 = {a, b, c, d, e, f, g}
+    int[] arr2 = {u, v, w, x, y, z}
+
+   => In count inversion problem it says we have to find the total number of element where i < j in  an array and arr[i]
+    > arr[j]
+
+   => So, we basically apply the merge sort algorithim and check whether the arr1[ind] is greater than the arr2[ind] and
+    if the condition satisfies then we calculate by count = count + arr.length - i, and it works for all the condition
+    and we dont miss anything from here.
+
+        Example :
+            let's say our index is in 'c' for an arr1 and in 'x' for an arr2. So, in this condition if the 'c' is
+            greater than the 'x' then all the elements of arr1 that are coming after 'c' will also be valid.
+
+        But for the reverse pairs it will not work. for the same example assume if 'c' > 2 * 'x' then it is true that
+        all the elements coming after 'c' will be valid. But for the edge case like below will not work : For example :
+        'c' is greater than 'x' but it is not greater than 2 * 'x' then according to merge sort we are increasing the
+        index of arr2 since 'x' is smaller than 'c' but what if 'd' or 'e' or 'f' or 'g' can satisfy the condition of
+        'd' > 2 * 'x' or 'e' > 2 * 'x' etc. If we follow the merge sort without checking for these cases then we might
+        miss something, where 'd','e', etc might become greater than 2 * 'x'
+
+for the above thing just fix it the sentence have been messed and give in point don't change anything

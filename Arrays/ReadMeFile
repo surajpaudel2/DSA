@@ -1,3 +1,5 @@
+=> Array's rotation folder
+
 => Longest Consecutive Subsequences
     -> Learned how to track the numbers using the hashmap.
     -> Have we seen the number before, etc.

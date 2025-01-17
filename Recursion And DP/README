@@ -1,0 +1,6 @@
+=>When you have to do recursion on same value multiple times, for example in maximum average ratio where you might have to
+ go to the same index multiple times, so in this particular condition think in terms of Bigger problem and the smaller
+ problem. In such kind of problem, base case will also helps to avoid the recursion infinitely on the same index
+ depending
+  upon the
+ condition. So it will help.
