@@ -1,0 +1,27 @@
+=> BFS
+    -> Suitable when you have to take step by step approach
+
+    -> Mainly suitable when you have to take step in all 4 directions, like in this case
+       row + 1, row - 1, col + 1, col - 1
+
+    -> In this case, we have to take step in all 4 directions, so BFS is suitable
+
+    -> BFS can be very useful for finding the shortest path in problems like "rotten oranges" and "01 matrix". To solve such problems using BFS, instead of performing BFS for each element one by one, perform BFS for all relevant elements simultaneously and then increase the level by 1. This approach helps in finding the shortest path efficiently. BFS works well in this context because we enqueue all elements in one pass, and since the queue operates in a first-in-first-out (FIFO) manner, we ensure that the shortest path is found first. If there is another path, it would have already been visited due to the FIFO nature of the queue, ensuring the correct answer.
+
+    -> TRICK:
+        -> In problems like the "01 matrix", it is not necessary to start BFS from the elements for which we need to find the shortest distance. Instead, we can start BFS from the elements where the shortest distance is not required.
+
+
+=> DFS :
+    -> Suitable when there is connection between the elements
+
+    Question)  Surrounded Regions:
+        -> Both BFS and DFS can be applied to solve this problem.
+
+        TRICK:
+            -> Instead of checking all the available 'O' cells, focus on the boundary cells first.
+            -> Identify the 'O' cells on the boundary and find out which 'O' cells are connected to them.
+            -> Mark all these connected 'O' cells as visited. These cells cannot be captured.
+            -> Finally, iterate over the matrix and mark all unvisited 'O' cells as 'X' since they are surrounded by 'X' cells.
+
+        -> Photo will be in the folder, surrounded_regions.jpg
