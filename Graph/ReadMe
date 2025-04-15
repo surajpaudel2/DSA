@@ -25,3 +25,15 @@
             -> Finally, iterate over the matrix and mark all unvisited 'O' cells as 'X' since they are surrounded by 'X' cells.
 
         -> Photo will be in the folder, surrounded_regions.jpg
+
+=> Word Ladder:
+    -> It's same like finding the shortest distance using the BFS.
+
+=> Number Of Distinct Islands:
+    -> Idea and Handy Tips:
+        -> When comparing arrays/objects or storing them in data structures like Set or Map, using arrays or lists directly can lead to duplicate entries because their references differ. For example:
+           arr1 = {1, 2, 3} and arr2 = {1, 2, 3} are considered different. To avoid this, use StringBuilder or StringBuffer to convert them to strings before storing, ensuring unique entries.
+
+    -> Prerequisite: Number of Islands.
+    -> To find the number of distinct islands, use the same approach as the Number of Islands problem. Use DFS or BFS to identify islands, then store their paths in a Set using StringBuilder/StringBuffer/String to ensure uniqueness. The size of the Set will give the number of distinct islands.
+    -> You can see the number_of_distinct_islands.jpg in the folder to understand the problem and how to make 2 islands as same.
